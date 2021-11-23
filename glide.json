@@ -1,0 +1,39 @@
+[
+  {
+    "kind": "column",
+    "name": "joined-list-sort-by-keys",
+    "description": "Sort Joined List by secondary joined list",
+    "author": "Darren Murphy",
+    "params": [
+      {
+        "name": "data",
+        "displayName": "Joined List - data",
+        "type": "string"
+      },
+      {
+        "name": "sort_keys",
+        "displayName": "Joined List - sort keys",
+        "type": "string"
+      },
+      {
+        "name": "delimiter",
+        "displayName": "String delimiter (default: ,)",
+        "type": "string"
+      },
+      {
+        "name": "sort_type",
+        "displayName": "Sort Type (numerical, lexical. Default: numerical)",
+        "type": "string"
+      },
+      {
+        "name": "sort_order",
+        "displayName": "Ordering (asc, desc. Default: desc)",
+        "type": "string"
+      }
+     
+    ],
+    "result": {
+      "type": "string"
+    }
+  }
+]
