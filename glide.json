@@ -7,28 +7,33 @@
     "params": [
       {
         "name": "data",
-        "displayName": "Joined List - data",
+        "displayName": "Joined List - data (Required)",
         "type": "string"
       },
       {
         "name": "sort_keys",
-        "displayName": "Joined List - sort keys",
+        "displayName": "Joined List - sort keys (Required)",
         "type": "string"
       },
       {
         "name": "delimiter",
-        "displayName": "String delimiter (default: ,)",
+        "displayName": "String delimiter (Otional: default: ,)",
         "type": "string"
       },
       {
         "name": "sort_type",
-        "displayName": "Sort Type (numerical, lexical. Default: numerical)",
+        "displayName": "Sort Type (Optional: numerical, lexical. Default: numerical)",
         "type": "string"
       },
       {
         "name": "sort_order",
-        "displayName": "Ordering (asc, desc. Default: desc)",
+        "displayName": "Ordering (Optional: asc, desc. Default: desc)",
         "type": "string"
+      },
+      {
+        "name": "limit",
+        "displayName": "Limit the number of items returned (Optional: default: unlimited)",
+        "type": "number"
       }
      
     ],

@@ -1,4 +1,4 @@
-window.function = function (data, sort_keys, delimiter, sort_type, sort_order) {
+window.function = function (data, sort_keys, delimiter, sort_type, sort_order, limit) {
   if (data.value === undefined) return undefined;
   if (sort_keys.value === undefined) return undefined;
   var delim = delimiter.value ? delimiter.value : ',';
@@ -20,6 +20,9 @@ window.function = function (data, sort_keys, delimiter, sort_type, sort_order) {
   }
   if (ordering === 'asc') {
     sorted = sorted.reverse();
+  }
+  if (limit.value) {
+    sorted = sorted.splice(0, limit.value);
   }
   var joined = sorted.join('');
 
