@@ -7,6 +7,10 @@ window.function = function (data, sort_keys, delimiter, sort_type, sort_order, l
 
   var data_arr = data.value.split(delim);
   var keys_arr = sort_keys.value.split(delim);
+  if (ordering === 'asc') {
+    data_arr = data_arr.reverse();
+    keys_arr = keys_arr.reverse();
+  }
   var obj = {};
   for (i=0; i<data_arr.length; i++) {
     obj[data_arr[i]] = keys_arr[i];
