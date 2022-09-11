@@ -1,7 +1,8 @@
-window.function = function (data, sort_keys, delimiter, sort_type, sort_order, limit) {
+window.function = function (data, sort_keys, delimiter, return_delimiter, sort_type, sort_order, limit) {
   if (data.value === undefined) return undefined;
   if (sort_keys.value === undefined) return undefined;
   var delim = delimiter.value ? delimiter.value : ',';
+  var return_delim = return_delimiter.value ? return_delimiter.value : '';
   var sorttype = sort_type.value ? sort_type.value : 'numerical';
   var ordering = sort_order.value ? sort_order.value : 'desc';
 
@@ -28,7 +29,7 @@ window.function = function (data, sort_keys, delimiter, sort_type, sort_order, l
   if (limit.value) {
     sorted = sorted.splice(0, limit.value);
   }
-  var joined = sorted.join('');
+  var joined = sorted.join(return_delim);
 
   return joined;
 }

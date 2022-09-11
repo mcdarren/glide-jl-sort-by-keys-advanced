@@ -21,6 +21,11 @@
         "type": "string"
       },
       {
+        "name": "return_delimiter",
+        "displayName": "String delimiter to use for retuned string (Otional: default: empty)",
+        "type": "string"
+      },
+      {
         "name": "sort_type",
         "displayName": "Sort Type (Optional: numerical, lexical. Default: numerical)",
         "type": "string"
